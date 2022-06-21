@@ -4,7 +4,7 @@ models:
   - name: stg_greenery__addresses
     description: "user address info"
     columns: 
-      - name: address
+      - name: address_id
         description: "primary key"
         tests: 
           - unique
@@ -65,8 +65,12 @@ models:
           - not_null
       - name: user_guid
         description: "Id of the user that generated the order"
-      - name: promo_guid
+      - name: promo_id
         description: "Id of the promotion used in the order"
+        tests:
+          - relationships:
+              to: ref("stg_promos")
+              field: promo_id
       - name: address_guid
         description: "Id of the address related to the order"
       - name: created_at_utc
@@ -81,7 +85,7 @@ models:
         description: "Tracking id for the order shipment"
       - name: shipping_service
         description: "Shipping service used for the order"
-      - name: estimated_delivery_at_uct
+      - name: estimated_delivery_at_utc
         description: "Estimated delivery time of the order"
       - name: delivered_at_utc
         description: "Time at which the order was delivered"
