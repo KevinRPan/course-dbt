@@ -4,7 +4,7 @@ models:
   - name: product__fact_page_views
     description: "page views"
     columns: 
-      - name: event_guid
+      - name: product_session_id
         description: "primary key"
         tests: 
           - unique

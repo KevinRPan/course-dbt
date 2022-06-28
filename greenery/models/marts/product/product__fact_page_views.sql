@@ -43,7 +43,8 @@ JOIN {{ ref('stg_greenery__products')}} as products
  GROUP BY 1,2,3,4
 )
 
-SELECT  e.session_guid
+SELECT {{ dbt_utils.surrogate_key(['e.session_guid', 'e.product_guid']) }} as product_session_id
+       , e.session_guid
        , e.user_id
        , e.product_guid
        , product_name

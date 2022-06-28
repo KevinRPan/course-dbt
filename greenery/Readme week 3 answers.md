@@ -83,7 +83,17 @@ WHERE table_name='mytable'
 
 Install a package (i.e. dbt-utils, dbt-expectations) and apply one or more of the macros to your project
 
+packages yml add:
+packages:
+  - package: dbt-labs/dbt_utils
+    version: 0.8.6
+
+then run 
+dbt deps 
+
+used surrogate key in product-session table 
+
 ## PART 5: After improving our project with all the things that we have learned about dbt, we want to show off our work!
 
-Show (using dbt docs and the model DAGs) how you have simplified or improved a DAG using macros and/or dbt packages.
+I am pleased with codegen generating templates for schemas. 
 

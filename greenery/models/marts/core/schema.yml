@@ -1,6 +1,143 @@
 version: 2
 
 models:
-  - name: core__dim_users
-  - name: core__fact_orders
   - name: core__fact_order_items
+    description: ""
+    columns:
+      - name: order_guid
+        description: ""
+
+      - name: user_guid
+        description: ""
+
+      - name: order_cost_usd
+        description: ""
+
+      - name: shipping_cost_usd
+        description: ""
+
+      - name: order_total_usd
+        description: ""
+
+      - name: order_status
+        description: ""
+
+      - name: promo_id
+        description: ""
+
+      - name: created_at_utc
+        description: ""
+
+      - name: estimated_delivery_at_utc
+        description: ""
+
+      - name: delivered_at_utc
+        description: ""
+
+      - name: address_id
+        description: ""
+
+      - name: tracking_id
+        description: ""
+
+      - name: shipping_service
+        description: ""
+
+      - name: product_id
+        description: ""
+
+      - name: product_quantity_ordered
+        description: ""
+
+      - name: product_price
+        description: ""
+
+      - name: product_inventory
+        description: ""
+
+      - name: product_name
+        description: ""
+
+      - name: promo_status
+        description: ""
+
+      - name: promo_discount
+        description: ""
+
+
+  - name: core__dim_users
+    description: ""
+    columns:
+      - name: user_guid
+        description: ""
+
+      - name: orders
+        description: ""
+
+      - name: total_products_ordered
+        description: ""
+
+      - name: product_total_spend
+        description: ""
+
+      - name: most_recent_ordered_at_utc
+        description: ""
+
+      - name: first_ordered_at_utc
+        description: ""
+
+      - name: avg_products_ordered
+        description: ""
+
+      - name: avg_order_size
+        description: ""
+
+
+
+  - name: core__fact_orders
+    description: ""
+    columns:
+      - name: order_guid
+        description: ""
+
+      - name: user_guid
+        description: ""
+
+      - name: order_cost_usd
+        description: ""
+
+      - name: shipping_cost_usd
+        description: ""
+
+      - name: order_total_usd
+        description: ""
+
+      - name: order_status
+        description: ""
+
+      - name: promo_id
+        description: ""
+
+      - name: created_at_utc
+        description: ""
+
+      - name: estimated_delivery_at_utc
+        description: ""
+
+      - name: delivered_at_utc
+        description: ""
+
+      - name: address_id
+        description: ""
+
+      - name: tracking_id
+        description: ""
+
+      - name: shipping_service
+        description: ""
+
+      - name: promo_status
+        description: ""
+
+      - name: promo_discount
+        description: ""

@@ -18,7 +18,6 @@ GROUP BY 1,2,3
 SELECT session_purchase.*
        oi.product_guid,
        oi.quantity
-       
 FROM session_purchase
 JOIN dbt_kevin_p.stg_greenery__order_items oi 
   ON e.order_guid = oi.order_guid
