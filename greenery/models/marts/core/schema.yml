@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: core__dim_users
+  - name: core__fact_orders
+  - name: core__fact_order_items

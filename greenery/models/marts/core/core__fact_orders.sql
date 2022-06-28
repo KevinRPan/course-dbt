@@ -20,8 +20,8 @@ select order_guid
        ,tracking_id
        ,shipping_service
        
-       , count(order_items.product_id) as products_ordered
-       , sum(quantity) as product_quantity_ordered_total
+      --  , count(order_items.product_id) as products_ordered
+      --  , sum(quantity) as product_quantity_ordered_total
 
        , promo_status
        , promo_discount
