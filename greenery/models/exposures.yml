@@ -1,0 +1,13 @@
+version: 2
+
+exposures:  
+  - name: BI Tools 
+    description: >
+      Dashboards and analyses
+    type: dashboard
+    maturity: high
+    owner:
+      name: Kevin Pan
+      email: kevin@greenery.com
+    depends_on:
+      - ref('product_funnel')

@@ -24,3 +24,28 @@ models:
         description: "product name"
       - name: quantity
         description: "product quantity"
+
+  # yes this is the same, just renamed
+  - name: product_funnel
+    description: "page views"
+    columns: 
+      - name: product_session_id
+        description: "primary key"
+        tests: 
+          - unique
+          - not_null 
+      - name: session_guid
+      - name: user_id
+        description: "User ID"
+      - name: order_id
+        description: "Order ID"
+      - name: checkout_at
+        description: "checkout created at time"
+      - name: shipped_at
+        description: "shipping created at time"
+      - name: product_id
+        description: "product id"
+      - name: product_name
+        description: "product name"
+      - name: quantity
+        description: "product quantity"
