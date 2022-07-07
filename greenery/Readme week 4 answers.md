@@ -124,7 +124,8 @@ if your organization is using dbt, what are 1-2 things you might do differently 
 
 if you are thinking about moving to analytics engineering, what skills have you picked that give you the most confidence in pursuing this next step?
 
-> it's very doable and there are many resources available 
+> I've defined the staging and production data models with testing and documentation. I feel confident in understanding and applying macros, and in knowing there are many resources available.
+
 
 3B. Setting up for production / scheduled dbt run of your project And finally, before you fly free into the dbt night, we will take a step back and reflect: after learning about the various options for dbt deployment and seeing your final dbt project, how would you go about setting up a production/scheduled dbt run of your project in an ideal state? You don’t have to actually set anything up - just jot down what you would do and why and post in a README file.
 
